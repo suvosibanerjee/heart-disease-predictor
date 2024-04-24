@@ -38,7 +38,7 @@ def signup():
 @app.route('/streamlit_report', methods=['GET', 'POST'])
 def streamlit_report():
     if request.method == 'GET':
-        subprocess.Popen(["streamlit", "run", "streamlit_app.py"])
+        subprocess.Popen(["streamlit", "run", "--server.enableCORS", "false", "streamlit_app.py"])
         return render_template('streamlit_report.html')
 
 if __name__ == '__main__':
