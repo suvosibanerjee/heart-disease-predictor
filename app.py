@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, redirect
 import subprocess
 
 app = Flask(__name__,template_folder='templates')
@@ -38,8 +38,7 @@ def signup():
 @app.route('/streamlit_report', methods=['GET', 'POST'])
 def streamlit_report():
     if request.method == 'GET':
-        subprocess.Popen(["streamlit", "run", "--server.enableCORS", "false", "streamlit_app.py"])
-        return render_template('streamlit_report.html')
+        return redirect('https://heartdiseasepredictor-jirffudm7capxkw7mtbm6g.streamlit.app/')
 
 if __name__ == '__main__':
     app.run(debug=True)
