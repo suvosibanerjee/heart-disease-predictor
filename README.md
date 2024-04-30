@@ -5,6 +5,9 @@ The Heart Disease Prediction System is a software project designed to assist hea
 Features:
 
 Patient Data Management: Allows healthcare providers to input and manage patient information including demographics, medical history, and risk factors.
+
 Heart Disease Risk Prediction: Utilizes machine learning algorithms to analyze patient data and predict the likelihood of heart disease occurrence.
+
 Risk Factor Assessment: Incorporates various risk factors such as smoking, diabetes, hypertension, and obesity to assess the overall risk profile of the patient.
+
 User Interface: Provides an intuitive user interface for healthcare professionals to interact with the system, input patient data, and view prediction results.
